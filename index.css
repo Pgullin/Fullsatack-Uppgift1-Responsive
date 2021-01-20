@@ -1,0 +1,40 @@
+body {
+	background-color:blueviolet;
+}
+
+h1 {
+	color: navy;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+H1, H2, h3 {
+	grid-column: 1/10;
+}
+
+.imagecontainer {
+  grid-column: 1/5;
+}
+
+img{
+object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+article{
+  grid-column: 6/10;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+
+	article{
+    grid-column: 1/10;
+  }
+}
